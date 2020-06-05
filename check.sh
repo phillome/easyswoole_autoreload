@@ -5,11 +5,11 @@ function start_server() {
   if [[ -n "$phpversion" ]]; then
     curPath=$(cd `dirname $0`; pwd)
     echo "停止旧服务..."
-    /www/server/php/$phpversion/bin/php $curPath/jiasu stop
+    /www/server/php/$phpversion/bin/php $curPath/easyswoole stop
     sleep 2
     ulimit -c unlimited
     echo "重新启动新服务..."
-    /www/server/php/$phpversion/bin/php $curPath/jiasu start d
+    /www/server/php/$phpversion/bin/php $curPath/easyswoole start d
   else
     echo "check.sh后面 缺少php版本号（如71 72等）,默认按72处理"
     start_server 72
