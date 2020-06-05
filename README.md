@@ -1,0 +1,2 @@
+# easyswoole_autoreload
+通过crontab 自动重启easyswoole主服务
