@@ -1,6 +1,7 @@
 # easyswoole_autoreload
 ## 背景
-easyswoole虽然自带了热更新脚本，但只能更新work进程，master和manager进程并不会更新
+easyswoole虽然自带了热更新脚本，但只能更新work进程，master和manager进程并不会更新，
+
 这个脚本就是解决这一问题的
 通过crontab 自动重启easyswoole主服务
 
@@ -20,5 +21,12 @@ easyswoole虽然自带了热更新脚本，但只能更新work进程，master和
 </pre>
 
 ## 注意
-1. 脚本中php 的路径 要结合自己的情况替换真实的路径
+1. 脚本中php 的路径 要结合自己的情况替换真实的路径，脚本中的路径是宝塔系统的路径
 2. 目前脚本只检测了根目录下的文件变更，没有检测vendor的变更 
+
+## 待改进点
+1. 支持平滑重启
+
+
+### PS
+shell脚本不熟，是边学边试出来的，写的可能不规范，任何改进，各位大神尽管 pull我，我会尽快合并上来 造福大家
